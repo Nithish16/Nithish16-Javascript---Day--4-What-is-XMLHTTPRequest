@@ -1,7 +1,7 @@
 // -------------Restcountries API
 
 let request = new XMLHttpRequest();
-request.open("GET", "https://restcountries.com/v2/all");
+request.open("GET", "https://restcountries.com/v3.1/all");
 request.send(null);
 request.onload = function () {
   const countries = JSON.parse(request.responseText);
